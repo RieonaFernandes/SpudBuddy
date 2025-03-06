@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* applying this fon't family to everything */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.buttonShadow {
+  box-shadow: 3px 3px 0 0 #60a5fa;
+}
+
+.buttonShadow:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 #60a5fa;
+}
+
+.terms {
+  border-radius: 25px;
+  border: 2px solid #FF5F15;
+  padding: 40px 40px 0px 40px;
+  box-shadow: 2px 2px 0 0 #FF5F15
+}
