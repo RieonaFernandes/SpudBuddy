@@ -1,3 +1,4 @@
+import Button from "./Button";
 import React from "react";
 
 const First = () => {
@@ -6,7 +7,7 @@ const First = () => {
       <div className="flex flex-col gap-4">
         <h1 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           Welcome to <span className="text-blue-500 font-medium">Hera</span>
-          <span className="text-orange-500 font-medium">cross</span>!
+          <span className="text-orange-700 font-medium">cross</span>!
         </h1>
       </div>
       <div className="terms bg-slate-700">
@@ -140,9 +141,7 @@ const First = () => {
           </p>
         </div>
       </div>
-      <button className="px-8 py-4 rounded-md border-[2px] bg-slate-950 border-blue-500 border-solid buttonShadow duration-200">
-        <p>Accept & Begin!</p>
-      </button>
+      <Button>{"Accept & Begin!"}</Button>
     </div>
   );
 };
