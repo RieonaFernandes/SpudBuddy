@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 /* applying this fon't family to everything */
 * {
   font-family: "Poppins", sans-serif;

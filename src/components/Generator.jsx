@@ -18,11 +18,17 @@ function Header(props) {
   );
 }
 
-const Generator = () => {
+const Generator = (Props) => {
+  let {
+    poison,
+    setPoison,
+    muscles,
+    setMuscles,
+    objective,
+    setObjective,
+    updateWorkout,
+  } = Props;
   const [showDropDown, setShowDropDown] = useState(false);
-  const [poison, setPoison] = useState("individual");
-  const [muscles, setMuscles] = useState([]);
-  const [objective, setObjective] = useState("strength_power");
 
   function toggleDropDown() {
     //to toggle the dropdown menu based on mouse click
@@ -138,7 +144,7 @@ const Generator = () => {
         title={"Become Machamp"}
         description={"Select your end game."}
       />
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
           return (
             <button
@@ -158,7 +164,7 @@ const Generator = () => {
           );
         })}
       </div>
-      <Button>{"Formulate"}</Button>
+      <Button func={updateWorkout}>{"Formulate"}</Button>
     </SectionWrapper>
   );
 };
