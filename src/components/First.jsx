@@ -126,13 +126,14 @@ const First = () => {
             <b>12. Contact Us: </b>
             <br />
             If you have any questions or concerns about these Terms, please
-            contact us at: <br />
-            <p className="py-2">
-              Email: heracross-queries@gmail.com <br />
-              Address: 123 at madeup ave, A34 986.
-            </p>
+            contact us at:
+            <br />
+            <i>Email</i>: heracross-queries@gmail.com
+            <br />
+            <i>Address</i>: 123 at madeup ave, A34 986.
+            <br />
           </p>
-          <p className="py-2">
+          <p className="py-3">
             <i>
               By clicking the below button, you acknowledge that you have read,
               understood, and agree to be bound by these Terms and Conditions of
@@ -141,7 +142,13 @@ const First = () => {
           </p>
         </div>
       </div>
-      <Button>{"Accept & Begin!"}</Button>
+      <Button
+        func={() => {
+          window.location.href = "#generate";
+        }}
+      >
+        {"Accept & Begin!"}
+      </Button>
     </div>
   );
 };
