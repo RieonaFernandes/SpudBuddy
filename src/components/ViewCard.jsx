@@ -50,7 +50,7 @@ const ViewCard = (Props) => {
         })}
         <button
           onClick={handleSetIncrement}
-          className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-orange-900 w-full duration-200"
+          className="flex flex-col p-2 rounded border-[1.5px] duration-200 border-solid border-blue-900 hover:border-orange-700 w-full duration-200"
         >
           <h3 className="text-slate-400 text-sm capitalize">Sets completed</h3>
           <p className="font-medium">{setsCompleted} / 5</p>

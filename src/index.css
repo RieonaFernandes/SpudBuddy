@@ -28,3 +28,29 @@ span {
   padding: 40px 40px 0px 40px;
   box-shadow: 2px 2px 0 0 #CC5500
 }
+
+.logo {
+  width: 20%;
+  height: auto;
+}
+
+.gif {
+  border-radius: 20%;
+  animation: mymove 4s infinite;
+  width: 60%;
+  height: auto;
+}
+.gifdiv {
+  background-color: 	#012345;
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: 	#012345;
+  border-top: 2px solid #CC5500;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
+}

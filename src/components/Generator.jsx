@@ -65,7 +65,7 @@ const Generator = (Props) => {
     <SectionWrapper
       id={"generate"}
       header={"Generate your workout"}
-      title={["It's", "Huge", "O'Clock"]}
+      title={["Let’s", "Get", "Spud-tacular!"]}
     >
       {/* Selecting the type of workout you want to take part in  */}
       <Header
@@ -82,7 +82,7 @@ const Generator = (Props) => {
                 setPoison(type);
               }}
               className={
-                "bg-slate-950 border  duration-200 px-4 py-3 rounded-lg " +
+                "bg-slate-950 border  duration-200 px-4 py-3 rounded-lg hover:border-orange-700 " +
                 (type === poison ? "border-orange-700" : " border-blue-500")
               }
               key={typeIndex}
@@ -98,17 +98,21 @@ const Generator = (Props) => {
         title={"Lock your targets"}
         description={"Select the muscles you wish to train."}
       />
-      <div className="bg-slate-950 border boder-solid hover:border-orange-700 p-3 rounded-lg flex flex-col">
+      <div
+        className={
+          "bg-slate-950 border boder-solid hover:border-orange-700 p-3 rounded-lg flex flex-col " +
+          ((poison == "individual" && muscles.length == 3) ||
+          (poison !== "individual" && muscles.length == 1)
+            ? "border-orange-700"
+            : "")
+        }
+      >
         <button
           onClick={toggleDropDown}
           className="relative flex items-center justify-center p-3"
         >
           <p className="capitalize">
-            {muscles.length == 0 ? (
-              "Select muscle groups"
-            ) : (
-              <span className="border-orange-700">{muscles.join(" ")}</span>
-            )}
+            {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
           </p>
           <i className="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-angle-down"></i>
         </button>
@@ -141,8 +145,8 @@ const Generator = (Props) => {
       {/* Selecting what your ideal end result would be  */}
       <Header
         index={"03"}
-        title={"Become Machamp"}
-        description={"Select your end game."}
+        title={"Become the Tot Boss"}
+        description={"Select your end game: Tater-tot to Titan!"}
       />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
@@ -164,7 +168,7 @@ const Generator = (Props) => {
           );
         })}
       </div>
-      <Button func={updateWorkout}>{"Formulate"}</Button>
+      <Button func={updateWorkout}>{"Load Up"}</Button>
     </SectionWrapper>
   );
 };
