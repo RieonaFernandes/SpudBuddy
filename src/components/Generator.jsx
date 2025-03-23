@@ -18,6 +18,10 @@ function Header(props) {
   );
 }
 
+function updatePosition(introGif, setIntroGif) {
+  window.location.href = "#workout";
+}
+
 const Generator = (Props) => {
   let {
     poison,
@@ -66,6 +70,7 @@ const Generator = (Props) => {
       id={"generate"}
       header={"Generate your workout"}
       title={["Let’s", "Get", "Spud-tacular!"]}
+      logo="true"
     >
       {/* Selecting the type of workout you want to take part in  */}
       <Header

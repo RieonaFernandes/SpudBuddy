@@ -3,7 +3,6 @@ import First from "./components/First";
 import Workout from "./components/Workout";
 import { useState } from "react";
 import { generateWorkout } from "./utils/generateWorkout";
-import AnimatedGif from "./components/AnimatedGif";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
   const [muscles, setMuscles] = useState([]);
   const [objective, setObjective] = useState("strength_power");
   const [firstPage, setFirstPage] = useState(false);
-  const [introGif, setIntroGif] = useState(false);
 
   function updateWorkout() {
     if (muscles.length < 1) {
@@ -34,17 +32,6 @@ function App() {
     <main className="min-h-screen flex flex-col bg-gradient-to-r from-slate-800 to-slate-950 text-white text-sm sm:text-base">
       {!firstPage && (
         <First firstPage={firstPage} setFirstPage={setFirstPage} />
-      )}
-      {firstPage && !introGif && (
-        <AnimatedGif
-          src={"./src/assets/SpudBuddy_mascot_gif.gif"}
-          alt={"Mascot"}
-          introGif={introGif}
-          setIntroGif={setIntroGif}
-          id={"support"}
-          header={"We’re about to sauté those muscles into shape"}
-          title={["Get ready to", "peel ", "the burn!"]}
-        />
       )}
       {firstPage && (
         <Generator
