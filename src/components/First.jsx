@@ -7,7 +7,7 @@ const First = (Props) => {
   return (
     <div className="min-h-screen flex flex-col gap-10 items-center justify-center text-center py-15 p-4 max-w-[900px] w-full mx-auto">
       <img
-        src="./src/assets/SpudBuddy_logo.png"
+        src="./src/assets/images/SpudBuddyLogo.png"
         alt="Logo"
         className="logo items-center"
       ></img>

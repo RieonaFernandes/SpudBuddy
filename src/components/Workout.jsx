@@ -16,7 +16,7 @@ const Workout = (Props) => {
         })}
       </div>
       <AnimatedGif
-        src={"./src/assets/hard_working_potato.gif"}
+        src={"./src/assets/images/hardWorkingPotato.gif"}
         alt={"Mascot"}
         id={"encourage"}
         header={""}

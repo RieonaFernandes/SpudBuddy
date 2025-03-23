@@ -37,7 +37,7 @@ function App() {
       )}
       {firstPage && !introGif && (
         <AnimatedGif
-          src={"./src/assets/SpudBuddy_mascot_gif.gif"}
+          src={"./src/assets/images/SpudBuddyMascotGif.gif"}
           alt={"Mascot"}
           introGif={introGif}
           setIntroGif={setIntroGif}
