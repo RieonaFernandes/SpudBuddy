@@ -5,6 +5,7 @@ import { useState } from "react";
 import { generateWorkout } from "./utils/generateWorkout";
 import AnimatedGif from "./components/AnimatedGif";
 import Footer from "./components/Footer";
+import mascot from "../assets/images/SpudBuddyMascotGif.gif";
 
 function App() {
   const [workout, setWorkout] = useState(null);
@@ -37,7 +38,7 @@ function App() {
       )}
       {firstPage && !introGif && (
         <AnimatedGif
-          src={"./src/assets/images/SpudBuddyMascotGif.gif"}
+          src={mascot}
           alt={"Mascot"}
           introGif={introGif}
           setIntroGif={setIntroGif}

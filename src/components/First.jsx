@@ -1,16 +1,13 @@
 import Button from "./Button";
 import React from "react";
+import logo from "../assets/images/SpudBuddyLogo.png";
 
 const First = (Props) => {
   let { firstPage, setFirstPage } = Props;
 
   return (
     <div className="min-h-screen flex flex-col gap-10 items-center justify-center text-center py-15 p-4 max-w-[900px] w-full mx-auto">
-      <img
-        src="./src/assets/images/SpudBuddyLogo.png"
-        alt="Logo"
-        className="logo items-center"
-      ></img>
+      <img src={logo} alt="Logo" className="logo items-center"></img>
       <div className="flex flex-col gap-4">
         <h1 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           Welcome <span className="text-blue-500 font-medium">Spud</span>

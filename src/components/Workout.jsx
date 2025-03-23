@@ -1,6 +1,7 @@
 import SectionWrapper from "./SectionWrapper";
 import ViewCard from "./ViewCard";
 import AnimatedGif from "./AnimatedGif";
+import hardwork from "../assets/images/hardWorkingPotato.gif";
 
 const Workout = (Props) => {
   const { workout } = Props;
@@ -16,7 +17,7 @@ const Workout = (Props) => {
         })}
       </div>
       <AnimatedGif
-        src={"./src/assets/images/hardWorkingPotato.gif"}
+        src={hardwork}
         alt={"Mascot"}
         id={"encourage"}
         header={""}
