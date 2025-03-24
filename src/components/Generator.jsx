@@ -87,7 +87,7 @@ const Generator = (Props) => {
                 setPoison(type);
               }}
               className={
-                "bg-slate-950 border  duration-200 px-4 py-3 rounded-lg hover:border-orange-700 " +
+                "bg-slate-950 border  duration-200 px-4 py-3 rounded-lg hover:border-orange-700 cursor-pointer" +
                 (type === poison ? "border-orange-700" : " border-blue-500")
               }
               key={typeIndex}
@@ -114,7 +114,7 @@ const Generator = (Props) => {
       >
         <button
           onClick={toggleDropDown}
-          className="relative flex items-center justify-center p-3"
+          className="relative flex items-center justify-center p-3 cursor-pointer"
         >
           <p className="capitalize">
             {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
@@ -134,7 +134,7 @@ const Generator = (Props) => {
                   }}
                   key={muscleGroupIndex}
                   className={
-                    "hover:text-blue-500 duration-200 " +
+                    "hover:text-blue-500 duration-200 cursor-pointer " +
                     (muscles.includes(muscleGroup) ? "text-blue-500" : " ")
                   }
                 >
@@ -161,7 +161,7 @@ const Generator = (Props) => {
                 setObjective(scheme);
               }}
               className={
-                "bg-slate-950 border  duration-200 px-4 hover:border-orange-700 py-3 rounded-lg " +
+                "bg-slate-950 border cursor-pointer duration-200 px-4 hover:border-orange-700 py-3 rounded-lg " +
                 (scheme === objective
                   ? "border-orange-700"
                   : " border-blue-400")
