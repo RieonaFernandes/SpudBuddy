@@ -5,7 +5,7 @@ const Button = (Props) => {
   return (
     <button
       onClick={func}
-      className="mx-auto px-8 py-4 rounded-md border-[2px] bg-slate-950 border-blue-500 border-solid buttonShadow duration-200"
+      className="mx-auto px-8 py-4 rounded-md border-[2px] bg-slate-950 border-blue-500 border-solid buttonShadow duration-200 cursor-pointer"
     >
       <p>{children}</p>
     </button>
