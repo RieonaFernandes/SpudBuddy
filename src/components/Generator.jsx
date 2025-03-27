@@ -117,7 +117,11 @@ const Generator = (Props) => {
           className="relative flex items-center justify-center p-3 cursor-pointer"
         >
           <p className="capitalize">
-            {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
+            {muscles.length == 0
+              ? poison == "individual"
+                ? "Select any 3 muscle groups"
+                : "Select 1 muscle group"
+              : muscles.join(" ")}
           </p>
           <i className="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-angle-down"></i>
         </button>
